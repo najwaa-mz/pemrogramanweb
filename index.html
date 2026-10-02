@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Najwa Amalia Zahra, mahasiswa PTIK UNNES.">
+    <title>Profil Najwa Amalia Zahra</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="#beranda" class="logo">Najwa Amalia Z.</a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="#beranda">Home</a>
+            <a href="#profil">Profile</a>
+            <a href="#kesibukan">Activity</a>
+            <a href="#tujuan">Goal</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <div class="hero-text">
+                <span class="tag">WELCOME TO MY SPACE! ^-^</span>
+
+                <h1>Halo, aku <span>Najwa!</span></h1>
+
+                <p>
+                    Aku mahasiswa Pendidikan Teknik Informatika
+                    dan Komputer di Universitas Negeri Semarang.
+                    Aku tertarik pada dunia kreatif digital dan
+                    teknologi, khususnya UI/UX Design dan juga Motion Graph.
+                </p>
+
+                <a href="#profil" class="button">About Me →</a>
+            </div>
+
+           
+        <div class="profile-card">
+            <div class="avatar">
+                <img src="png/najwa.jpeg"
+                    alt="Foto Najwa Amalia Zahra">
+            </div>
+
+            <h2>Najwa Amalia Zahra</h2>
+            <p>Mahasiswa PTIK UNNES</p>
+            <span class="status">✦ "Study Hard, istiraHARD"</span>
+        </div>
+        </section>
+
+        <section class="content" id="profil">
+            <div class="section-title">
+                <h2>My Profile</h2>
+                <p>Identitas dan latar belakangku :O.</p>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <div class="icon">👤</div>
+                    <h3>Identitas Diri</h3>
+
+                    <p><strong>Nama:</strong> Najwa Amalia Zahra</p>
+                    <p><strong>NIM:</strong> 25050900<b>69</b></p>
+                    <p><strong>Program Studi:</strong>
+                        Pendidikan Teknik Informatika dan Komputer</p>
+                    <p><strong>Universitas:</strong>
+                        Universitas Negeri Semarang (UNNES)</p>
+                    <p><strong>Angkatan:</strong> 2025</p>
+                </article>
+
+                <article class="info-card" id="kesibukan">
+                    <div class="icon">🎨</div>
+                    <h3>Activity di Luar Kuliah</h3>
+
+                    <p>
+                        Aku punya ketertarikan sama graphic
+                        design dan editing video! XD Jadi, kegiatan ini
+                        menjadi sarana untuk mengembangkan kreativitas,
+                        kemampuan visual, dan juga mengasah skill aku dalam
+                        memproduksi produk (design & video).
+                    </p>
+
+                    <span class="skill-label">Graphic Design</span>
+                    <span class="skill-label">Video Editing</span>
+                    <span class="skill-label">Creative Digital</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="content highlight" id="tujuan">
+            <div class="section-title">
+                <h2>Goal dan Minat IT</h2>
+                <p>Tujuan yang ingin aku capai di masa depan. (Semoga amiinn..!!)</p>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <div class="icon">🌟</div>
+                    <h3>Goal</h3>
+
+                    <p>
+                        Aku bercita-cita memiliki karier di bidang
+                        teknologi yang sesuai sama minat dan
+                        kemampuanku. Aku juga pengen terus belajar,
+                        mengembangkan keterampilan, serta menghasilkan
+                        karya yang lebih banyak.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="icon">💻</div>
+                    <h3>Bidang IT yang Ingin Aku Dalami :O</h3>
+
+                    <p>
+                        Aku pengen belajar UI/UX Design sampai
+                        expert dibidang itu. UI/UX berfokus
+                        pada perancangan antarmuka dan pengalaman
+                        pengguna agar website dan aplikasi mudah
+                        digunakan serta sesuai kebutuhan pengguna.
+                    </p>
+
+                    <p>
+                        Aku pengen mempelajari riset pengguna,
+                        wireframe, desain antarmuka, prototyping,
+                        dan usability testing.
+                    </p>
+
+                    <span class="skill-label">UI Design</span>
+                    <span class="skill-label">UX Research</span>
+                    <span class="skill-label">Wireframing</span>
+                    <span class="skill-label">Prototyping</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="closing">
+            <h2>Terus Belajar dan Berkembang</h2>
+            <p>
+                Melalui pendidikan, kreativitas, dan teknologi,
+                aku pengen terus meningkatkan kemampuan diri
+                dan mewujudkan cita-cita.
+            </p>
+            <button class="button" id="greetingButton">
+                Hello!! Sapa aku pls✨
+            </button>
+            <p id="greetingMessage" class="greeting-message"
+               aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Najwa Amalia Zahra</p>
+        <p>Calon Engineer | Punya kos kosan 1000 Pintu</p>
+    </footer>
+
+</body>
+</html>

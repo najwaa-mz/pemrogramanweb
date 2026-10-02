@@ -1,0 +1,355 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cream: #faf7f2;
+    --brown: #5b4636;
+    --light-brown: #b79a7b;
+    --text: #40352e;
+    --muted: #796d62;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: var(--brown);
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e5c9a8;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 520px;
+    padding: 85px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 620px;
+}
+
+.tag {
+    color: #967451;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: clamp(35px, 5vw, 54px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+h1 span {
+    color: #967451;
+}
+
+.hero-text p {
+    color: var(--muted);
+    margin-bottom: 28px;
+    max-width: 550px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--brown);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background: #80654e;
+    transform: translateY(-2px);
+}
+
+.profile-card {
+    background: #eee3d5;
+    padding: 35px 30px;
+    border-radius: 22px;
+    text-align: center;
+    min-width: 270px;
+    box-shadow: 0 12px 30px #5b463615;
+}
+
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--brown);
+    margin: 0 auto 20px;
+    border: 6px solid #d9c6b1;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+.profile-card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.status {
+    display: inline-block;
+    background: #f9f5ef;
+    color: var(--brown);
+    border-radius: 20px;
+    padding: 5px 13px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.content {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: var(--muted);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.info-card {
+    background: white;
+    padding: 28px;
+    border: 1px solid #eee5da;
+    border-radius: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px #5b463610;
+}
+
+.icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.info-card h3 {
+    color: #876849;
+    font-size: 19px;
+    margin-bottom: 13px;
+}
+
+.info-card p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.info-card strong {
+    color: var(--text);
+}
+
+/* ===== MINAT IT ===== */
+.highlight {
+    background: #eae0d3;
+}
+
+.highlight .info-card {
+    background: #fdfbf8;
+}
+
+.skill-label {
+    display: inline-block;
+    background: #eee3d5;
+    color: var(--brown);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 12px 5px 0 0;
+    font-size: 12px;
+}
+
+/* ===== BAGIAN PENUTUP ===== */
+.closing {
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.closing h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.closing p {
+    color: var(--muted);
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.greeting-message {
+    margin-top: 15px !important;
+    font-weight: bold;
+    color: var(--brown) !important;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--brown);
+    color: white;
+    text-align: center;
+    padding: 25px 8%;
+    font-size: 13px;
+}
+
+footer p + p {
+    margin-top: 5px;
+    color: #e5d8ca;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+        padding: 18px 6%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+        gap: 35px;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 360px;
+    }
+
+    .content {
+        padding: 55px 6%;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .closing {
+        padding: 55px 6%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
